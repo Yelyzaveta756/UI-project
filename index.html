@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- * Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- * Modern Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
+
+      <!-- * Our stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>QC-Funds</title>
+    <link rel="icon" href="images/pacman.svg" type="image/svg+xml">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="header-title"> UI Controls: Description and Examples</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="basic-elements-container">
+                <h2>Radiobutton</h2>
+                <p class="elements-paragraph">A radio button lets the user select exactly one option from a group of mutually exclusive choices. Selecting one option automatically deselects the others. It is used when all options should be visible at once, for example choosing a gender or a payment method.</p>
+                <div class="elements-list">
+                     <div class="elements-container">
+                        <h3 class="elements-title">Gender</h3>
+                        <label for="female">Female</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="male" name="gender">
+                        <label for="other">Other</label>
+                        <input type="radio" id="other" name="gender">
+                    </div>
+
+                    <div class="elements-container">
+                        <h3 class="elements-title">Payment method</h3>
+                        <label for="card">Credit card</label>
+                        <input type="radio" id="card" name="payment">
+                        <label for="paypal">PayPal</label>
+                        <input type="radio" id="paypal" name="payment">
+                        <label for="cash">Cash</label>
+                        <input type="radio" id="cash" name="payment">
+                    </div>
+
+                     <div class="elements-container">
+                        <h3 class="elements-title">Delivery option</h3>
+                        <label for="standard">Standard</label>
+                        <input type="radio" id="standard" name="delivery">
+                        <label for="express">Express</label>
+                        <input type="radio" id="express" name="delivery">
+                        <label for="pickup">Pickup</label>
+                        <input type="radio" id="pickup" name="delivery">
+                    </div>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Checkbox</h2>
+                <p class="elements-paragraph">A checkbox lets the user turn an option on or off independently of other options. Several checkboxes in a group can be selected at the same time. It is used for multiple choices, such as selecting interests or agreeing to terms and conditions.</p>
+                <div class="elements-list">
+                    <div class="elements-container">
+                        <h3 class="elements-title">Interests</h3>
+                        <ul class="list checkbox-list">
+                            <li>
+                                <label for="music">Music</label>
+                                <input type="checkbox" id="music" name="interests">
+                            </li>
+                            <li>
+                                <label for="sports">Sports</label>
+                                <input type="checkbox" id="sports" name="interests">
+                            </li>
+                            <li>
+                                <label for="travel">Travel</label>
+                                <input type="checkbox" id="travel" name="interests">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="elements-container">
+                        <h3 class="elements-title">Newsletter topics</h3>
+                        <ul class="list checkbox-list">
+                            <li>
+                                <label for="news">News</label>
+                                <input type="checkbox" id="news" name="newsletter">
+                            </li>
+                            <li>
+                                <label for="offers">Special offers</label>
+                                <input type="checkbox" id="offers" name="newsletter">
+                            </li>
+                            <li>
+                                <label for="updates">Product updates</label>
+                                <input type="checkbox" id="updates" name="newsletter">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="elements-container">
+                        <h3 class="elements-title">Agreements</h3>
+                        <ul class="list checkbox-list">
+                            <li>
+                                <label for="terms">I accept the terms and conditions</label>
+                                <input type="checkbox" id="terms" name="agreements">
+                            </li>
+                            <li>
+                                <label for="privacy">I accept the privacy policy</label>
+                                <input type="checkbox" id="privacy" name="agreements">
+                            </li>
+                            <li>
+                                <label for="marketing">I agree to receive marketing emails</label>
+                                <input type="checkbox" id="marketing" name="agreements">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Text input</h2>
+                <p class="elements-paragraph">A text input is a single-line field where the user types free-form data such as a name, email, or search query. It is the main way to collect textual information from the user and often includes validation and placeholder hints.</p>
+                <div class="elements-list">
+                    <div class="elements-container">
+                        <label for="full-name">Full name</label>
+                        <input type="text" id="full-name" class="text-field" placeholder="Enter your name">
+                    </div>
+                    <div class="elements-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="text-field" placeholder="name@example.com">
+                    </div>
+                    <div class="elements-container">
+                        <label for="search">Search</label>
+                        <input type="search" id="search" class="text-field" placeholder="Type to search...">
+                    </div>
+                </div>
+            </div>
+           <div class="basic-elements-container">
+                <h2>Tabs</h2>
+                <p class="elements-paragraph">Tabs organize content into separate panels within the same page, and the user switches between them by clicking the tab headers. They save screen space and group related information, so only one section is shown at a time.</p>
+                <div class="tabs">
+                    <div class="tab-buttons" role="tablist">
+                        <button type="button" class="tab-button active" data-tab="tab-profile">Profile</button>
+                        <button type="button" class="tab-button" data-tab="tab-settings">Settings</button>
+                        <button type="button" class="tab-button" data-tab="tab-help">Help</button>
+                    </div>
+                    <div class="tab-panel active" id="tab-profile">
+                        <p>This is the Profile tab. Here you can see personal information.</p>
+                    </div>
+                    <div class="tab-panel" id="tab-settings">
+                        <p>This is the Settings tab. Here you can change application options.</p>
+                    </div>
+                    <div class="tab-panel" id="tab-help">
+                        <p>This is the Help tab. Here you can find answers to common questions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Button</h2>
+                <p class="elements-paragraph">A button is a clickable control that triggers an action, such as submitting a form, saving data, or opening a dialog. It gives the user a clear and visible way to perform an operation.</p>
+                <div class="elements-list">
+                    <button type="button" class="btn btn-primary">Save</button>
+                    <button type="button" class="btn btn-secondary">Cancel</button>
+                    <button type="button" class="btn btn-primary" disabled>Disabled</button>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Text label</h2>
+                <p class="elements-paragraph">A text label is a static piece of text that describes another element or provides information. Labels tell the user what a field or control is for, and they improve usability and accessibility, especially when linked to inputs.</p>
+                <div class="elements-list">
+                    <div class="elements-container">
+                        <label for="label-username">Username:</label>
+                        <input type="text" id="label-username" class="text-field text-field--wide" placeholder="Click the label, the field gets focus">
+                    </div>
+                    <div class="elements-container">
+                        <span class="static-label">Status: Active</span>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Link</h2>
+                <p class="elements-paragraph">A link (hyperlink) is a clickable piece of text or an image that navigates the user to another page, a section of the same page, or an external resource. It is the basic mechanism of navigation on the web.</p>
+                <div class="elements-list">
+                    <a href="https://developer.mozilla.org" target="_blank" rel="noopener" class="example-link">External link (MDN)</a>
+                    <a href="#top" class="example-link">Link to the top of the page</a>
+                    <a href="mailto:test@example.com" class="example-link">Email link</a>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Tooltip</h2>
+                <p class="elements-paragraph">A tooltip is a small pop-up message that appears when the user hovers over or focuses on an element. It provides short additional hints or explanations without cluttering the interface.</p>
+                <div class="elements-list">
+                    <span class="tooltip" tabindex="0">Hover over me
+                        <span class="tooltip-text" role="tooltip">This is a tooltip hint</span>
+                    </span>
+                    <button type="button" class="btn btn-primary" title="Native browser tooltip">Hover (title attribute)</button>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Dropdown list</h2>
+                <p class="elements-paragraph">A dropdown list (select) shows a collapsed list of options, and the user chooses one from the expanded list. It saves space and is suitable when there are many options, such as choosing a country or a city.</p>
+                <div class="elements-list">
+                    <div class="elements-container">
+                        <label for="cars">Choose a car:</label>
+                        <select id="cars" name="cars" class="text-field">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </div>
+                    <div class="elements-container">
+                        <label for="language">Choose a language:</label>
+                        <select id="language" name="language" class="text-field">
+                            <option value="ukrainian">Ukrainian</option>
+                            <option value="german">German</option>
+                            <option value="italian">Italian</option>
+                            <option value="french">French</option>
+                            <option value="spanish">Spanish</option>
+                        </select>
+                    </div>
+                     <div class="elements-container">
+                        <label for="work-positions">Select your position:</label>
+                        <select id="work-positions" name="work-positions" class="text-field">
+                            <option value="hr-manager">HR-manager</option>
+                            <option value="backend-developer">Backend Developer</option>
+                            <option value="qa-manager">QA manager</option>
+                            <option value="team-lead">Team lead</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-elements-container">
+                <h2>Data grid</h2>
+                <p class="elements-paragraph">A data grid (table) displays structured data in rows and columns. It allows users to view, compare, and often sort or filter large sets of records, such as a list of users, orders, or products.</p>
+                <div class="table-wrapper">
+                    <table class="data-grid">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Position</th>
+                                <th scope="col">City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>1</td><td>Olena Shevchenko</td><td>QA manager</td><td>Kyiv</td></tr>
+                            <tr><td>2</td><td>Andrii Kovalenko</td><td>Backend Developer</td><td>Lviv</td></tr>
+                            <tr><td>3</td><td>Maria Bondarenko</td><td>HR-manager</td><td>Odesa</td></tr>
+                            <tr><td>4</td><td>Ivan Petrenko</td><td>Team lead</td><td>Kharkiv</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="container">
+        <div class="footer-container">
+            <p>Completed by Yelyzaveta Zaichenko, student of group IP-z41</p>
+        </div>
+    </footer>
+    
+    <script src="./main.js" type="module"></script>
+</body>
+</html>
